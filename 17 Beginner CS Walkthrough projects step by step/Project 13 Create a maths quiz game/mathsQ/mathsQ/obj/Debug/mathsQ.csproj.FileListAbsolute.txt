@@ -1,0 +1,9 @@
+c:\users\bluelime learning so\documents\visual studio 2015\Projects\mathsQ\mathsQ\bin\Debug\mathsQ.exe.config
+C:\Users\Bluelime Learning So\documents\visual studio 2015\Projects\mathsQ\mathsQ\bin\Debug\mathsQ.exe
+C:\Users\Bluelime Learning So\documents\visual studio 2015\Projects\mathsQ\mathsQ\bin\Debug\mathsQ.pdb
+C:\Users\Bluelime Learning So\documents\visual studio 2015\Projects\mathsQ\mathsQ\obj\Debug\mathsQ.csprojResolveAssemblyReference.cache
+C:\Users\Bluelime Learning So\documents\visual studio 2015\Projects\mathsQ\mathsQ\obj\Debug\mathsQ.Form1.resources
+C:\Users\Bluelime Learning So\documents\visual studio 2015\Projects\mathsQ\mathsQ\obj\Debug\mathsQ.Properties.Resources.resources
+C:\Users\Bluelime Learning So\documents\visual studio 2015\Projects\mathsQ\mathsQ\obj\Debug\mathsQ.csproj.GenerateResource.Cache
+C:\Users\Bluelime Learning So\documents\visual studio 2015\Projects\mathsQ\mathsQ\obj\Debug\mathsQ.exe
+C:\Users\Bluelime Learning So\documents\visual studio 2015\Projects\mathsQ\mathsQ\obj\Debug\mathsQ.pdb
