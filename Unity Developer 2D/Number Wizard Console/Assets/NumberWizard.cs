@@ -4,45 +4,58 @@ using UnityEngine;
 
 public class NumberWizard : MonoBehaviour
 {
-    int max = 1000;
-    int min = 1;
-    int guess = 500;
-    int tries = 0;
+    int max;
+    int min;
+    int guess;
+    int tries;
 
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("Welcome to number wizard");
-        Debug.Log("Pick a number, don't tell me what it is...");
-        Debug.Log("The highest number you can pick is: " + max);
-        Debug.Log("The lowest number you can pick is: " + min);
-        Debug.Log("Tell me if your number is higher or lower than:" + guess);
-        Debug.Log("Push Up = Higher, Push Down = Lower, Push Enter = Correct");
+        StartGame();
+    }
+
+    void StartGame()
+    {
+        max = 1000;
+        min = 1;
+        guess = 500;
+
+        Debug.Log("Welkom bij de nummer tovenaar");
+        Debug.Log("Kies een nummer maar vertel mij niet wat je gekozen hebt...");
+        Debug.Log("Het hoogste getal wat je kan kiezen is: " + max);
+        Debug.Log("Het kleinste getal wat je kan kiezen is: " + min);
+        Debug.Log("Zeg me of je getal groter of kleiner is dan:" + guess);
+        Debug.Log("Pijltje Omhoog = Hoger, Pijltje Omlaag = Lager, Druk op Enter = Juist geraden");
         max = max + 1;
     }
 
+    
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            Debug.Log("Your number is higher than " + guess + ".");
             min = guess;
-            guess = (max + min) / 2;
-            tries++;
-            Debug.Log("Is your number " + guess + "?");
+            NextGuess();
         }
         else if (Input.GetKeyDown(KeyCode.DownArrow))
         {
-            Debug.Log("Your number is lower than " + guess + ".");
             max = guess;
-            guess = (max + min) / 2;
-            tries++;
-            Debug.Log("Is your number " + guess + "?");
+            NextGuess();
         }
         else if (Input.GetKeyDown(KeyCode.Return))
         {
-            Debug.Log("I guessed the right number, your number is " + guess + " and it took me " + tries + " tries!!");
-        }
+            Debug.Log("Ik heb het juiste nummer geraden, het nummer is " + guess + " en het koste me " + tries + " beurten!!");
+            //Debug.Log("Druk nogmaals op Enter om een nieuw spel te starten.");
+            StartGame();
+         }
+    }
+
+    void NextGuess()
+    {
+        guess = (max + min) / 2;
+        tries++;
+        Debug.Log("Is het hoger of lager dan " + guess + "?");
     }
 }
