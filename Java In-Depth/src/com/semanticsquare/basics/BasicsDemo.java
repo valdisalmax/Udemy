@@ -77,10 +77,47 @@ class BasicsDemo {
         System.out.println("cChar: " + cChar);
     }
 
-    public static void main (String[] args) {
-        
-        
+    static int count = 25;
 
+    static void arrays() {
+        System.out.println("\nInside arrays ...");
+        int[] myArray = new int[] {9, 11, 2, 5, 4, 4, 6};
+        System.out.println(myArray.length);
+        System.out.println("myArray[0]: " + myArray[0]);
+        System.out.println("myArray[1]: " + myArray[1]);
+        System.out.println("myArray[2]: " + myArray[2]);
+        System.out.println("myArray[3]: " + myArray[3]);
+        System.out.println("myArray[4]: " + myArray[4]);
+        System.out.println("myArray[5]: " + myArray[5]);
+        System.out.println("myArray[6]: " + myArray[6]);
+    }
+
+    static void threeDimensionalArrays() {
+        System.out.println("\nInside threeDimensionalArrays ...");
+        int[][][] unitsSold = new int[][][] {
+                                             { // New York
+                                                {0, 0, 0, 0}, // Jan
+                                                {0, 0, 0, 0}, // Feb
+                                                {0, 0, 0, 0}, // Mar
+                                                {0, 850, 0, 0}, // Apr
+                                             },
+                                             { // San Frnacisco
+                                                {0, 0, 0, 0}, // Jan
+                                                {0, 0, 0, 0}, // Feb
+                                                {0, 0, 0, 0}, // Mar
+                                                {0, 0, 0, 0}, // Apr
+                                             },
+                                             { // 
+                                                {0, 0, 0, 0}, // Jan
+                                                {0, 0, 0, 0}, // Feb
+                                                {0, 0, 0, 0}, // Mar
+                                                {0, 0, 0, 0}, // Apr
+                                             }
+        };
+        System.out.println("unitsSold[0][3][1]: " + unitsSold[0][3][1]);
+    }
+
+    public static void main (String[] args) {
         int i = 6;
         int j = 2;
         System.out.println("\n\nInside arithmatics ...");
@@ -90,8 +127,6 @@ class BasicsDemo {
         System.out.println(i / j);
         System.out.println(i % j);
         
-        
-
         boolean isInsured = true;
         
         double coverageByInsurance = 0.8;
@@ -111,6 +146,8 @@ class BasicsDemo {
         print();
         primitives();
         typeCasting();
+        arrays();
+        threeDimensionalArrays();
     }
 
     // 4. Comments or Disabling code
